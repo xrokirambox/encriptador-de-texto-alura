@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Encriptador de texto</h1>
+    <header>
+        <div class="logo">
+            <img src="./img/iconoAlura .png" alt="Logo Alura">
+        </div>
+    </header>
+    <main>
+        <section class="seccion__texto__ingresado">
+            <textarea placeholder="Ingrese el texto aquí"></textarea>
+            <div class="span__encriptado">
+                <span>
+                    <img class="icono" src="https://img.icons8.com/ios-filled/50/000000/box-important--v1.png" alt="Importante"> 
+                    Sólo letras minúsculas y sin acentos
+                </span>
+            </div>
+            <div class="botones__encriptado">
+                <button id="id__boton__encriptar" class="boton__encriptar" onclick="encriptarTexto();">Encriptar</button>
+                <button id="id__boton__desencriptar" class="boton__desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div id="id__seccion__resultado" class="seccion__resultado">
+                <img id="ocultar__img" src="./img/sinMensaje.png" alt="Sin Mensaje">
+                <div id="id__contenedor__span__resultado" class="contenedor__span__resultado">
+                    <p>
+                        <span class="span1__resultado">Ningún mensaje fue encontrado</span><br><br>
+                        <span class="span2__resultado">Ingresa el texto que desees encriptar o desencriptar.</span>
+                    </p>
+                </div> <div class="contenedor__boton__oculto">
+                <button id="id__boton__oculto" class="boton__oculto" onclick="copiarTexto();">Copiar</button>
+            </div>
+            </div> 
+           
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><span>julian guaridola</span></li>
+            <li><span>Colombia</span></li>
+            <li><span>Alura, proyecto ONE</span></li>
+            <li><span>Todos los derechos reservados. EncriptadorONE&reg;</span></li>
+        </ul>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
